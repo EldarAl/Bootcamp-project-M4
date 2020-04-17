@@ -13,6 +13,9 @@ const selCurrency2 = document.querySelectorAll(".sel-currency2");
 //Инпуты
 const input = document.querySelector(".input");
 const input2 = document.querySelector(".input2");
+input.addEventListener('input',calculate);
+input2.addEventListener('input',calculate2);
+
 
 //Стартовое значение инпута
 input.value = 1;
