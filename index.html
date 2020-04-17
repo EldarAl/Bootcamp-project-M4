@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="index.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <div class="main">
+            <div class="image">
+                <img src="./img/Asset 1@3x 1.png" alt="bank">
+            </div>
+            <div class="headerlinks">
+                <div><span class="links">БАНК</span></div>
+                <div><span class="links">БИЗНЕС</span></div>
+                <div><span class="links">ИНВЕСТИЦИИ</span></div>
+                <div><span class="links">СТРАХОВАНИЕ</span></div>
+                <div><span class="links">МОБАЙЛ</span></div>
+                <div><span class="links">ПУТЕШЕСТВИЯ</span></div>
+                <div><span class="links">РАЗВЛЕЧЕНИЯ</span></div>
+            </div>
+            <div class="login">
+                    <span>ВОЙТИ</span>
+            </div>
+        </div>
+    </header>
+    <main>
+        <div class="conv">
+        <span >Конвертер валют онлайн<span>
+        </div>
+        <div class="cont_body">
+            <div class="container">
+                <span class="have_word">У меня есть</span>
+                <div class="cur_container">
+                    <span class="currency purple">RUB</span>
+                    <span class="currency">USD</span>
+                    <span class="currency">EUR</span>
+                    <span class="currency">GBP</span>
+                    <select class="select currency">
+                        <!-- <option disabled selected value></option> -->
+                        <option value="TRY" class="currency">TRY</option>
+                        <option value="HKD">HKD</option>
+                        <option value="IDR">IDR</option>
+                        <option value="ILS">ILS</option>
+                        <option value="DKK">DKK</option>
+                        <option value="INR">INR</option>
+                        <option value="CHF">CHF</option>
+                        <option value="MXN">MXN</option>
+                        <option value="CZK">CZK</option>
+                        <option value="SGD">SGD</option>
+                        <option value="THB">THB</option>
+                        <option value="HRK">HRK</option>
+                        <option value="MYR">MYR</option>
+                        <option value="NOK">NOK</option>
+                        <option value="CNY">CNY</option>
+                        <option value="BGN">BGN</option>
+                        <option value="PHP">PHP</option>
+                        <option value="SEK">SEK</option>
+                        <option value="PLN">PLN</option>
+                        <option value="ZAR">ZAR</option>
+                        <option value="CAD">CAD</option>
+                        <option value="ISK">ISK</option>
+                        <option value="BRL">BRL</option>
+                        <option value="RON">RON</option>
+                        <option value="NZD">NZD</option>
+                        <option value="JPY">JPY</option>
+                        <option value="KRW">KRW</option>
+                        <option value="HUF">HUF</option>
+                        <option value="AUD">AUD</option>
+                      </select>
+                </div>
+                <div class="input_box">
+                    <input type="text" class="input" oninput = 'calculate()'>
+                    <span class="rates">
+                        <span>1</span>
+                        <span class="sel-currency">RUB</span>
+                        <span>=</span>
+                        <span class="rate"></span>
+                        <span class="sel-currency2">USD</span>
+                    </span>
+                </div>
+            </div>
+            <div class="arrow">
+                <img src="./img/Group 5.png" alt="arrow" width="60" height="50">
+            </div>
+            <div class="container2">
+                <span class="have_word">Хочу приобрести</span>
+                <div class="cur_container2">
+                    <span class="currency">RUB</span>
+                    <span class="currency purple">USD</span>
+                    <span class="currency">EUR</span>
+                    <span class="currency">GBP</span>
+                    <select class="select currency">
+                        <!-- <option disabled selected value></option> -->
+                        <option value="TRY">TRY</option>
+                        <option value="HKD">HKD</option>
+                        <option value="IDR">IDR</option>
+                        <option value="ILS">ILS</option>
+                        <option value="DKK">DKK</option>
+                        <option value="INR">INR</option>
+                        <option value="CHF">CHF</option>
+                        <option value="MXN">MXN</option>
+                        <option value="CZK">CZK</option>
+                        <option value="SGD">SGD</option>
+                        <option value="THB">THB</option>
+                        <option value="HRK">HRK</option>
+                        <option value="MYR">MYR</option>
+                        <option value="NOK">NOK</option>
+                        <option value="CNY">CNY</option>
+                        <option value="BGN">BGN</option>
+                        <option value="PHP">PHP</option>
+                        <option value="SEK">SEK</option>
+                        <option value="PLN">PLN</option>
+                        <option value="ZAR">ZAR</option>
+                        <option value="CAD">CAD</option>
+                        <option value="ISK">ISK</option>
+                        <option value="BRL">BRL</option>
+                        <option value="RON">RON</option>
+                        <option value="NZD">NZD</option>
+                        <option value="JPY">JPY</option>
+                        <option value="KRW">KRW</option>
+                        <option value="HUF">HUF</option>
+                        <option value="AUD">AUD</option>
+                      </select>
+                </div>
+                <div class="input_box2">
+                    <input type="text" class="input input2" oninput = 'calculate2()'>
+                    <span class="rates">
+                        <span>1</span>
+                        <span class="sel-currency2">USD</span>
+                        <span>=</span>
+                        <span class="rate2"></span>
+                        <span class="sel-currency">RUB</span>
+                    </span>
+                </div>
+            </div>
+        </div>
+        
+        
+
+
+    </main>
+    <div class="popup">
+        <div class="popup-content">
+            Loading
+        </div>
+    </div>
+    
+
+
+
+
+
+
+    <script src="index.js"></script>
+</body>
+</html>
